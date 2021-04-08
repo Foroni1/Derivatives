@@ -4,16 +4,16 @@ function H = SmallTime(kappa,theta,sigma,rho,v0,money,T)
 %during the calibration
 
 %INPUT:
-%   kappa: rate at which the variance returns to its long run mean
-%   theta: long run mean of the variance
-%   sigma: volatility of the variance
-%   rho: correlation between the price process and the variance process
-%   v0: initial variance
-%   money: options moneyness
-%   T: options maturities
+%   kappa: scalar rate at which the variance returns to its long run mean
+%   theta: scalar long run mean of the variance
+%   sigma: scalar volatility of the variance
+%   rho: scalar correlation between the price process and the variance process
+%   v0: scalar initial variance
+%   money: scalar/matrix of options moneyness
+%   T: scalar/matrix of options maturities
 
 %OUTPUT:
-%   H: options asymptotical implied volatility under the Heston model
+%   H: scalar/matrix of options asymptotical implied volatilities under the Heston model
 
 x = log(money);
 alpha = kappa*theta;
