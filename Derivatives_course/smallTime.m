@@ -3,6 +3,9 @@ function H = SmallTime(kappa,theta,sigma,rho,v0,money,T)
 %using an asymptotic formula. Precisely, this function has to be used in a cost function
 %during the calibration
 
+%Modified version of the SmallTime function in R. Bauer's "Fast Calibration in the Heston Model" thesis
+%to work with multi-dimensional data, instead of one-dimensional
+
 %INPUT:
 %   kappa: scalar rate at which the variance returns to its long run mean
 %   theta: scalar long run mean of the variance
