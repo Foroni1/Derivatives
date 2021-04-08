@@ -12,7 +12,6 @@ S0 = data.UnderlyingPrice(1);
 r = 0.02417; 
 
 %% Pre-processing
-
 n = numel(categories(categorical(data.StrikePrice)));
 m = numel(categories(categorical(data.ExpirationY)));
 
